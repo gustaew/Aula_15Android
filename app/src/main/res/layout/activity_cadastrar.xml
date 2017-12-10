@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorControlHighlight"
+    android:paddingBottom="@dimen/activity_horizontal"
+    android:paddingLeft="@dimen/activity_vertical"
+    android:paddingRight="@dimen/activity_vertical"
+    android:paddingTop="@dimen/activity_horizontal"
+    tools:context="br.com.sistemacontrolepredial.CadastrarActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloFormularioCadastrar"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <GridLayout
+        android:id="@+id/formDadosEmpresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp"
+        android:background="@android:color/background_light"
+        android:columnCount="1"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_horizontal"
+        android:paddingLeft="@dimen/activity_vertical"
+        android:paddingRight="@dimen/activity_vertical"
+        android:paddingTop="@dimen/activity_horizontal"
+        android:rowCount="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tituloFormDados"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:textColor="@color/colorFontTitulo"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/campoNomeEmpresa"
+            android:layout_width="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="left"
+            android:ems="14"
+            android:hint="@string/campoNomeTitulo" />
+
+        <EditText
+            android:id="@+id/campoCNPJ"
+            android:layout_width="wrap_content"
+            android:ems="14"
+            android:hint="@string/campoCNPJTitulo" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/formFuncionamento"
+        android:layout_below="@+id/formDadosEmpresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_horizontal"
+        android:paddingBottom="@dimen/activity_horizontal"
+        android:paddingLeft="@dimen/activity_vertical"
+        android:paddingRight="@dimen/activity_vertical"
+        android:paddingTop="@dimen/activity_horizontal"
+        android:columnCount="2"
+        android:rowCount="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="2"
+            android:text="@string/tituloFormFuncionamento"
+            android:textAllCaps="false"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:textColor="@color/colorFontTitulo"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/campoHorarioEntrada"
+            android:layout_width="wrap_content"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_row="2"
+            android:hint="@string/campoEntradaTitulo"
+            android:inputType="time"/>
+
+        <EditText
+            android:id="@+id/campoHorarioSaida"
+            android:layout_width="wrap_content"
+            android:layout_row="2"
+            android:layout_columnWeight="1"
+            android:layout_column="1"
+            android:inputType="time"
+            android:hint="@string/campoSaidaTitulo" />
+
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/formArCondicionado"
+        android:layout_below="@+id/formFuncionamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_horizontal"
+        android:paddingBottom="@dimen/activity_horizontal"
+        android:paddingLeft="@dimen/activity_vertical"
+        android:paddingRight="@dimen/activity_vertical"
+        android:paddingTop="@dimen/activity_horizontal"
+        android:columnCount="2"
+        android:rowCount="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="2"
+            android:text="@string/tituloFormArCondiconado"
+            android:textAllCaps="false"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:textColor="@color/colorFontTitulo"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/campoArCondicionadoLigado"
+            android:layout_width="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:hint="@string/campoArLigado"
+            android:layout_columnWeight="1"
+            android:inputType="time"/>
+
+        <EditText
+            android:id="@+id/campoArcondicionadoDesligado"
+            android:layout_width="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:inputType="time"
+            android:layout_columnWeight="1"
+            android:hint="@string/campoHorarioArDesligado" />
+
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/formTemperatura"
+        android:layout_below="@+id/formArCondicionado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_horizontal"
+        android:paddingBottom="@dimen/activity_horizontal"
+        android:paddingLeft="@dimen/activity_vertical"
+        android:paddingRight="@dimen/activity_vertical"
+        android:paddingTop="@dimen/activity_horizontal"
+        android:columnCount="2"
+        android:rowCount="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_columnSpan="2"
+            android:text="@string/tituloFormAr"
+            android:textAllCaps="false"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:textColor="@color/colorFontTitulo"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/campoTemperatura"
+            android:layout_width="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:hint="@string/campoTemperaturaTitulo"
+            android:layout_columnWeight="1"
+            android:inputType="number"/>
+
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/formBotoes"
+        android:layout_below="@+id/formTemperatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_horizontal"
+        android:paddingBottom="@dimen/activity_horizontal"
+        android:paddingLeft="@dimen/activity_vertical"
+        android:paddingRight="@dimen/activity_vertical"
+        android:paddingTop="@dimen/activity_horizontal"
+        android:rowCount="1"
+        android:columnCount="2">
+
+        <Button
+            android:id="@+id/cadastrarEmpresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"
+            android:text="@string/cadastrarEmpresaBotao"
+            android:textColor="@color/colorButtonFont" />
+
+    </GridLayout>
+
+</RelativeLayout>
+
+</ScrollView>

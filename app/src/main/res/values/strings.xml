@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Sistema Controle Predial</string>
+    <string name="nomeUsuario">Usuário</string>
+    <string name="senhaUsuario">Senha</string>
+    <string name="botaoLogar">Logar</string>
+    <string name="title_activity_pesquisar_empresa">PesquisarEmpresa</string>
+    <string name="tituloCampoPesquisar">Nome da Empresa</string>
+    <string name="botaoPesquisar">Pesquisar</string>
+    <string name="campoNomeTitulo">Nome da Empresa</string>
+    <string name="campoCNPJTitulo">CNPJ</string>
+    <string name="tituloFormDados">Dados da Empresa</string>
+    <string name="tituloFormFuncionamento">Horário do Funcionamento</string>
+    <string name="cadastrarEmpresaBotao">Salvar</string>
+    <string name="campoTemperaturaTitulo">Temperatura</string>
+    <string name="campoEntradaTitulo">Aberto:</string>
+    <string name="campoSaidaTitulo">Fechado:</string>
+    <string name="campoArLigado">Ligado: </string>
+    <string name="campoHorarioArDesligado">Desligado: </string>
+    <string name="camposVazio">Alguns dos campos estão vazios, digite corretamente!</string>
+    <string name="SenhaUsuarioErrado">Senha ou usuário está incorreto, tente novamente!</string>
+    <string name="loginRealizado">Logado no Sistema Controle Predial</string>
+    <string name="tituloLogin">Faça Login</string>
+    <string name="tituloFormArCondiconado">Horário do Ar-Condicionado</string>
+    <string name="listarEmpresa">Listar Empresa</string>
+    <string name="tituloFormAr">Ar Condicionado</string>
+    <string name="tituloFormularioCadastrar">Cadastrar Empresa</string>
+    <string name="tituloFormularioDetalhes">Empresa </string>
+    <string name="botaoAlterarEmpresa">Alterar</string>
+    <string name="botaoExcluirEmpresa">Excluir</string>
+</resources>

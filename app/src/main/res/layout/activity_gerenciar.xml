@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_horizontal"
+    android:paddingLeft="@dimen/activity_vertical"
+    android:paddingRight="@dimen/activity_vertical"
+    android:paddingTop="@dimen/activity_horizontal"
+    android:background="?attr/colorControlHighlight"
+    tools:context="br.com.sistemacontrolepredial.GerenciarActivity">
+
+    <LinearLayout
+        android:id="@+id/containerListar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="@dimen/activity_vertical"
+        android:paddingRight="@dimen/activity_vertical"
+        android:paddingTop="20dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/listarEmpresa"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorFontTitulo"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/campoPesquisar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/botaoPesquisar"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:hint="@string/tituloCampoPesquisar" />
+
+        <Button
+            android:id="@+id/botaoPesquisar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/containerListar"
+            android:layout_marginTop="17dp"
+            android:background="@color/colorPrimary"
+            android:onClick="pesquisarEmpresa"
+            android:text="@string/botaoPesquisar"
+            android:textColor="@color/colorButtonFont" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:onClick="cadastrarEmpresa"
+        app:backgroundTint="@android:color/background_dark"
+        app:elevation="14dp"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</RelativeLayout>
